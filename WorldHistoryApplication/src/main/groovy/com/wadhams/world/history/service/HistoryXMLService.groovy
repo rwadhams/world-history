@@ -8,9 +8,6 @@ import java.time.format.DateTimeFormatter
 import com.wadhams.world.history.date.TimeScale
 
 class HistoryXMLService {
-	DateTimeFormatter localDateDTF = DateTimeFormatter.ofPattern('dd/MM/yyyy')
-	DateTimeFormatter yearMonthDTF = DateTimeFormatter.ofPattern('MM/yyyy')
-	
 	String historyFilename = 'History.xml'
 	
 	List<HistoryDTO> loadHistoryData() {
@@ -61,45 +58,40 @@ class HistoryXMLService {
 			
 			if (startDT.size()) {
 				dto.startTimeScale = TimeScale.LocalDate
-				String value = startDT.text()
-				dto.startLocalDate = LocalDate.parse(value, localDateDTF)
-				dto.startYearMonth = YearMonth.from(dto.startLocalDate) 
-				dto.startYear = Year.from(dto.startLocalDate) 
+				String startText = startDT.text()
+				dto.startText = startText
 			}
 			else if (startYM.size()) {
 				dto.startTimeScale = TimeScale.YearMonth
-				String value = startYM.text()
-				dto.startYearMonth = YearMonth.parse(value, yearMonthDTF)
-				dto.startYear = Year.from(dto.startYearMonth) 
+				String startText = startYM.text()
+				dto.startText = startText
 			}
 			else if (startCE.size()) {
 				dto.startTimeScale = TimeScale.CE
-				String value = startCE.text()
-				Integer year = Integer.parseInt(value)
-				dto.startYear = Year.of(year)
+				String startText = startCE.text()
+				dto.startText = startText
 			}
 			else if (startBCE.size()) {
 				dto.startTimeScale = TimeScale.BCE
-				String value = startBCE.text()
-				Integer year = Integer.parseInt(value)
-				dto.startYear = Year.of(year.unaryMinus())	//BCE years are negative
+				String startText = startBCE.text()
+				dto.startText = startText
 			}
 			else if (startKYA.size()) {
 				dto.startTimeScale = TimeScale.KYA
-				String value = startKYA.text()
-				dto.startValue = new BigDecimal(value)
+				String startText = startKYA.text()
+				dto.startText = startText
 			}
 			else if (startMYA.size()) {
 				dto.startTimeScale = TimeScale.MYA
-				String value = startMYA.text()
-				dto.startValue = new BigDecimal(value)
+				String startText = startMYA.text()
+				dto.startText = startText
 			}
 			else if (startGYA.size()) {
 				dto.startTimeScale = TimeScale.GYA
-				String value = startGYA.text()
-				dto.startValue = new BigDecimal(value)
+				String startText = startGYA.text()
+				dto.startText = startText
 			}
-			
+
 			//end
 			def endBCE = txn.end.bce
 			def endCE  = txn.end.ce
@@ -108,30 +100,25 @@ class HistoryXMLService {
 			
 			if (endDT.size()) {
 				dto.endTimeScale = TimeScale.LocalDate
-				String value = endDT.text()
-				dto.endLocalDate = LocalDate.parse(value, localDateDTF)
-				dto.endYearMonth = YearMonth.from(dto.endLocalDate) 
-				dto.endYear = Year.from(dto.endLocalDate) 
+				String endText = endDT.text()
+				dto.endText = endText
 			}
 			else if (endYM.size()) {
 				dto.endTimeScale = TimeScale.YearMonth
-				String value = endYM.text()
-				dto.endYearMonth = YearMonth.parse(value, yearMonthDTF)
-				dto.endYear = Year.from(dto.endYearMonth) 
+				String endText = endYM.text()
+				dto.endText = endText
 			}
 			else if (endCE.size()) {
 				dto.endTimeScale = TimeScale.CE
-				String value = endCE.text()
-				Integer year = Integer.parseInt(value)
-				dto.endYear = Year.of(year)
+				String endText = endCE.text()
+				dto.endText = endText
 			}
 			else if (endBCE.size()) {
 				dto.endTimeScale = TimeScale.BCE
-				String value = endBCE.text()
-				Integer year = Integer.parseInt(value)
-				dto.endYear = Year.of(year.unaryMinus())	//BCE years are negative
+				String endText = endBCE.text()
+				dto.endText = endText
 			}
-			
+
 			def description = txn.description
 			if (description.size()) {
 				def paragraphs = description.p

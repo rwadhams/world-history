@@ -1,10 +1,8 @@
 package com.wadhams.world.history.dto
 
 import com.wadhams.world.history.date.TimeScale
+
 import groovy.transform.ToString
-import java.time.LocalDate
-import java.time.Year
-import java.time.YearMonth
 
 @ToString(includeNames=true)
 class HistoryDTO {
@@ -13,17 +11,11 @@ class HistoryDTO {
 	
 	//start
 	TimeScale startTimeScale
-	BigDecimal startValue
-	Year startYear
-	YearMonth startYearMonth
-	LocalDate startLocalDate
+	String startText
 	
 	//end
 	TimeScale endTimeScale
-	BigDecimal endValue
-	Year endYear
-	YearMonth endYearMonth
-	LocalDate endLocalDate
+	String endText
 	
 	List<String> descriptionList = []
 }
