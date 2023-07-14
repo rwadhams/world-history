@@ -1,0 +1,19 @@
+package com.wadhams.world.history.report
+
+import com.wadhams.world.history.comparator.HistoryDTOStartComparator
+import com.wadhams.world.history.dto.HistoryDTO
+
+class GeologyTimelineReportService {
+	def execute(List<HistoryDTO> historyList) {
+		Collections.sort(historyList, new HistoryDTOStartComparator())
+		
+		File f = new File("out/geology-timeline-report.txt")
+		
+		f.withPrintWriter {pw ->
+			pw.println 'GEOLOGY TIMELINE REPORT'
+			pw.println '-----------------------'
+	
+			//report(historyList, pw)
+		}
+	}
+}
