@@ -1,7 +1,6 @@
 package com.wadhams.world.history.report
 
 import com.wadhams.world.history.biz.HistoryEvent
-import com.wadhams.world.history.comparator.HistoryDTOStartComparator
 import com.wadhams.world.history.comparator.HistoryEventStartComparator
 import com.wadhams.world.history.dto.HistoryDTO
 
