@@ -44,6 +44,14 @@
 			<p>Albert Einstein was a German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time.</p>
 		</description>
 	</data>
+	<data>
+		<name>Matthew Flinders</name>
+		<category>Person</category>
+		<category>Explorer</category>
+		<category>Australia</category>
+		<start><dt>16/03/1774</dt></start>
+		<end><dt>19/07/1814</dt></end>
+	</data>
 	
 	<!-- events in history -->
 	<data>
@@ -80,5 +88,4 @@
 		<category>Geology</category>
 		<start><kya>11.8</kya></start>
 	</data>
-
 </history>

@@ -26,12 +26,6 @@
 		</description>
 	</data>
 	<data>
-		<name>Augustus</name>
-		<category>Person</category>
-		<start><bce>63</bce></start>
-		<end><ce>14</ce></end>
-	</data>
-	<data>
 		<name>Marcus Aurelius</name>
 		<category>Person</category>
 		<start><ce>121</ce></start>
@@ -50,11 +44,5 @@
 		<category>Australia</category>
 		<start><dt>16/03/1774</dt></start>
 		<end><dt>19/07/1814</dt></end>
-	</data>
-	<data>
-		<name>Steve Jobs</name>
-		<category>Person</category>
-		<start><dt>24/02/1955</dt></start>
-		<end><dt>05/10/2011</dt></end>
 	</data>
 </history>
