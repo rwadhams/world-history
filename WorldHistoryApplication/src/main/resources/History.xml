@@ -82,6 +82,7 @@
 		<name>Precambrian (informal grouping of 3 Eons)</name>
 		<category>Geology</category>
 		<start><gya>4.54</gya></start>
+		<duration><gya>4</gya></duration>
 		<description>
 			<p>Began with the formation of the earth and continued until 541 million years ago.</p>
 			<p>Eons (Hadean, Archean, and Proterozoic) which represent 88% of geological time.</p>
@@ -91,6 +92,7 @@
 		<name>Paleozoic Era ("old life")</name>
 		<category>Geology</category>
 		<start><mya>541</mya></start>
+		<duration><mya>290</mya></duration>
 		<description>
 			<p>Characterized by trilobites, the first four-limbed vertebrates, and the origin of land plants.</p>
 		</description>
@@ -99,6 +101,7 @@
 		<name>Mesozoic Era ("middle life")</name>
 		<category>Geology</category>
 		<start><mya>252</mya></start>
+		<duration><mya>186</mya></duration>
 		<description>
 			<p>The "Age of Dinosaurs", though also is noteworthy for the first appearances of mammals and flowering plants.</p>
 		</description>
@@ -107,6 +110,7 @@
 		<name>Cenozoic Era ("new life")</name>
 		<category>Geology</category>
 		<start><mya>66</mya></start>
+		<duration><mya>66</mya></duration>
 		<description>
 			<p>The "Age of Mammals"</p>
 		</description>
@@ -115,6 +119,7 @@
 		<name>Cambrian Period (Paleozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>541</mya></start>
+		<duration><mya>56</mya></duration>
 		<description>
 			<p>What is the Cambrian period known for? Explosion of life.</p>
 			<p>Nevertheless, two things make the Cambrian Period notable. First, life exploded with almost all the major groups evolving in a relatively short time (about 40 million years). Second, the rise of animals with hard shells meant they had a much better chance of becoming fossilized.</p>
@@ -125,6 +130,7 @@
 		<name>Ordovician Period (Paleozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>485</mya></start>
+		<duration><mya>41</mya></duration>
 		<description>
 			<p>What is the Ordovician period known for? The Ordovician is best known for its diverse marine invertebrates, including graptolites, trilobites, brachiopods, and the conodonts (early vertebrates). A typical marine community consisted of these animals, plus red and green algae, primitive fish, cephalopods, corals, crinoids, and gastropods.</p>
 		</description>
@@ -133,6 +139,7 @@
 		<name>Silurian Period (Paleozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>444</mya></start>
+		<duration><mya>25</mya></duration>
 		<description>
 			<p>What is the Silurian period known for? Possibly the most remarkable biological event during the Silurian was the evolution and diversification of fish. Not only does this time period mark the wide and rapid spread of jawless fish, but also the appearances of both the first known freshwater fish and the first fish with jaws.</p>
 		</description>
@@ -141,6 +148,7 @@
 		<name>Devonian Period (Paleozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>419</mya></start>
+		<duration><mya>60</mya></duration>
 		<description>
 			<p>"Age of Fishes"</p>
 		</description>
@@ -149,6 +157,7 @@
 		<name>Carboniferous Period (Paleozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>359</mya></start>
+		<duration><mya>60</mya></duration>
 		<description>
 			<p>"Age of Amphibians"</p>
 			<p>The Carboniferous is the first period in which today's coal beds began to form.</p>
@@ -159,6 +168,7 @@
 		<name>Permian Period (Paleozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>299</mya></start>
+		<duration><mya>47</mya></duration>
 		<description>
 			<p>What is Permian period known for? During the Permian Period, Earth's crustal plates formed a single, massive continent called Pangaea. In the correspondingly large ocean, Panthalassa, marine organisms such as brachiopods, gastropods, cephalopods (nautiloids and ammonoids), and crinoids were present. On land, reptiles replaced amphibians in abundance.</p>
 		</description>
@@ -167,6 +177,7 @@
 		<name>Triassic Period (Mesozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>252</mya></start>
+		<duration><mya>51</mya></duration>
 		<description>
 			<p>"Age of Reptiles"</p>
 			<p>What is Triassic period known for? Reptiles, and particularly dinosaurs, were the dominant land-dwelling vertebrate animals at the time.</p>
@@ -176,6 +187,7 @@
 		<name>Jurassic Period (Mesozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>201</mya></start>
+		<duration><mya>56</mya></duration>
 		<description>
 			<p>What is the Jurassic period known for? The Jurassic Period was a golden time for dinosaurs, which flourished for 180 million years. Huge sauropod herbivores and carnivores emerged.</p>
 		</description>
@@ -184,6 +196,7 @@
 		<name>Cretaceous Period (Mesozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>145</mya></start>
+		<duration><mya>80</mya></duration>
 		<description>
 			<p>What is the Cretaceous Period known for? The Cretaceous is usually noted for being the last portion of the "Age of Dinosaurs", but that does not mean that new kinds of dinosaurs did not appear then.</p>
 		</description>
@@ -215,7 +228,7 @@
 	</data>
 	
 	<!-- 
-		<duration></duration>
+		<duration><timescale></timescale></duration>
 		<description>
 			<p></p>
 		</description>

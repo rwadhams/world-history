@@ -9,13 +9,17 @@ class HistoryDTO {
 	String name
 	List<String> categoryList = []
 	
-	//start
+	//start. Required.
 	TimeScale startTimeScale
 	String startText
 	
-	//end
+	//end. Optional.
 	TimeScale endTimeScale
 	String endText
+	
+	//duration. Optional. Can be included when 'end' is not available or missing 
+	TimeScale durationTimeScale
+	String durationText
 	
 	List<String> descriptionList = []
 }

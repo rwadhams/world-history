@@ -4,6 +4,7 @@ import java.time.LocalDate
 import java.time.Year
 import java.time.YearMonth
 import com.wadhams.world.history.date.HistoryDate
+import com.wadhams.world.history.date.HistoryDuration
 import com.wadhams.world.history.date.HistoryPeriod
 import com.wadhams.world.history.date.TimeScale
 
@@ -18,22 +19,6 @@ class HistoryEvent {
 	//date-related values
 	HistoryDate start
 	HistoryDate end
-	HistoryPeriod duration
-	
-	String reportStart() {
-		switch (start.timeScale) {
-			case TimeScale.CE :
-				return "Starting ${start.year} CE"
-			case TimeScale.BCE :
-				return "Starting ${Math.abs(start.value)} BCE"
-			case TimeScale.KYA :
-				return "${start.value} thousand years ago"
-			case TimeScale.MYA :
-				return "${start.value} million years ago"
-			case TimeScale.GYA :
-				return "${start.value} billion years ago"
-			default :
-				return "More work required here..."
-		}
-	}
+	HistoryDuration inputDuration
+
 }

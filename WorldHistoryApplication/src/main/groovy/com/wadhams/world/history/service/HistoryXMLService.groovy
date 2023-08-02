@@ -38,9 +38,11 @@ class HistoryXMLService {
 	HistoryDTO build(txn) {
 			HistoryDTO dto = new HistoryDTO()
 			
+			//name
 			String name = txn.name.text()
 			dto.name = name
 			
+			//categories
 			def category = txn.category
 			category.each {c ->
 				String cat = c.text()
@@ -97,6 +99,7 @@ class HistoryXMLService {
 			def endCE  = txn.end.ce
 			def endYM = txn.end.ym
 			def endDT = txn.end.dt
+			boolean endNotFound = false
 			
 			if (endDT.size()) {
 				dto.endTimeScale = TimeScale.LocalDate
@@ -118,7 +121,34 @@ class HistoryXMLService {
 				String endText = endBCE.text()
 				dto.endText = endText
 			}
+			else {
+				endNotFound = true
+			}
+			
+			//duration
+			if (endNotFound) {	//check for duration
+				def durationGYA = txn.duration.gya
+				def durationMYA = txn.duration.mya
+				def durationKYA = txn.duration.kya
+	
+				if (durationKYA.size()) {
+					dto.durationTimeScale = TimeScale.KYA
+					String durationText = durationKYA.text()
+					dto.durationText = durationText
+				}
+				else if (durationMYA.size()) {
+					dto.durationTimeScale = TimeScale.MYA
+					String durationText = durationMYA.text()
+					dto.durationText = durationText
+				}
+				else if (durationGYA.size()) {
+					dto.durationTimeScale = TimeScale.GYA
+					String durationText = durationGYA.text()
+					dto.durationText = durationText
+				}			
+			}
 
+			//description lines
 			def description = txn.description
 			if (description.size()) {
 				def paragraphs = description.p
