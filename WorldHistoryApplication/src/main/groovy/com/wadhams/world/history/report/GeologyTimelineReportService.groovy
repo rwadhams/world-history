@@ -14,7 +14,18 @@ class GeologyTimelineReportService {
 			pw.println 'GEOLOGY TIMELINE REPORT'
 			pw.println '-----------------------'
 	
-			//report(historyEventList, pw)
+			report(historyEventList, pw)
 		}
 	}
+	
+	def report(List<HistoryEvent> historyEventList, PrintWriter pw) {
+		historyEventList.each {he ->
+			pw.println "${he.name}"
+			pw.println "\t${he.reportStart()}"
+			he.descriptionList.each {text ->
+				pw.println "\t$text"
+			}
+			pw.println ''
+		}
+	} 
 }

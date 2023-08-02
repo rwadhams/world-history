@@ -76,16 +76,148 @@
 	<data>
 		<name>Age of the Earth</name>
 		<category>Geology</category>
-		<start><gya>4.52</gya></start>
+		<start><gya>4.54</gya></start>
 	</data>
 	<data>
-		<name>Triassic</name>
+		<name>Precambrian (informal grouping of 3 Eons)</name>
+		<category>Geology</category>
+		<start><gya>4.54</gya></start>
+		<description>
+			<p>Began with the formation of the earth and continued until 541 million years ago.</p>
+			<p>Eons (Hadean, Archean, and Proterozoic) which represent 88% of geological time.</p>
+		</description>
+	</data>
+	<data>
+		<name>Paleozoic Era ("old life")</name>
+		<category>Geology</category>
+		<start><mya>541</mya></start>
+		<description>
+			<p>Characterized by trilobites, the first four-limbed vertebrates, and the origin of land plants.</p>
+		</description>
+	</data>
+	<data>
+		<name>Mesozoic Era ("middle life")</name>
 		<category>Geology</category>
 		<start><mya>252</mya></start>
+		<description>
+			<p>The "Age of Dinosaurs", though also is noteworthy for the first appearances of mammals and flowering plants.</p>
+		</description>
 	</data>
 	<data>
-		<name>Holocene</name>
+		<name>Cenozoic Era ("new life")</name>
+		<category>Geology</category>
+		<start><mya>66</mya></start>
+		<description>
+			<p>The "Age of Mammals"</p>
+		</description>
+	</data>
+	<data>
+		<name>Cambrian Period (Paleozoic Era)</name>
+		<category>Geology</category>
+		<start><mya>541</mya></start>
+		<description>
+			<p>What is the Cambrian period known for? Explosion of life.</p>
+			<p>Nevertheless, two things make the Cambrian Period notable. First, life exploded with almost all the major groups evolving in a relatively short time (about 40 million years). Second, the rise of animals with hard shells meant they had a much better chance of becoming fossilized.</p>
+			<p>What caused the Cambrian extinction? The two most accepted current hypotheses for the Cambrian extinction are: Glaciation in the early Ordovician. Cooling and depletion of oxygen in marine waters.</p>
+		</description>
+	</data>
+	<data>
+		<name>Ordovician Period (Paleozoic Era)</name>
+		<category>Geology</category>
+		<start><mya>485</mya></start>
+		<description>
+			<p>What is the Ordovician period known for? The Ordovician is best known for its diverse marine invertebrates, including graptolites, trilobites, brachiopods, and the conodonts (early vertebrates). A typical marine community consisted of these animals, plus red and green algae, primitive fish, cephalopods, corals, crinoids, and gastropods.</p>
+		</description>
+	</data>
+	<data>
+		<name>Silurian Period (Paleozoic Era)</name>
+		<category>Geology</category>
+		<start><mya>444</mya></start>
+		<description>
+			<p>What is the Silurian period known for? Possibly the most remarkable biological event during the Silurian was the evolution and diversification of fish. Not only does this time period mark the wide and rapid spread of jawless fish, but also the appearances of both the first known freshwater fish and the first fish with jaws.</p>
+		</description>
+	</data>
+	<data>
+		<name>Devonian Period (Paleozoic Era)</name>
+		<category>Geology</category>
+		<start><mya>419</mya></start>
+		<description>
+			<p>"Age of Fishes"</p>
+		</description>
+	</data>
+	<data>
+		<name>Carboniferous Period (Paleozoic Era)</name>
+		<category>Geology</category>
+		<start><mya>359</mya></start>
+		<description>
+			<p>"Age of Amphibians"</p>
+			<p>The Carboniferous is the first period in which today's coal beds began to form.</p>
+			<p>The Carboniferous was the period when faunal life became established on land. Floral life became established on land during the previous period, the Devonian period, and began to flourish during the Carboniferous.</p>
+		</description>
+	</data>
+	<data>
+		<name>Permian Period (Paleozoic Era)</name>
+		<category>Geology</category>
+		<start><mya>299</mya></start>
+		<description>
+			<p>What is Permian period known for? During the Permian Period, Earth's crustal plates formed a single, massive continent called Pangaea. In the correspondingly large ocean, Panthalassa, marine organisms such as brachiopods, gastropods, cephalopods (nautiloids and ammonoids), and crinoids were present. On land, reptiles replaced amphibians in abundance.</p>
+		</description>
+	</data>
+	<data>
+		<name>Triassic Period (Mesozoic Era)</name>
+		<category>Geology</category>
+		<start><mya>252</mya></start>
+		<description>
+			<p>"Age of Reptiles"</p>
+			<p>What is Triassic period known for? Reptiles, and particularly dinosaurs, were the dominant land-dwelling vertebrate animals at the time.</p>
+		</description>
+	</data>
+	<data>
+		<name>Jurassic Period (Mesozoic Era)</name>
+		<category>Geology</category>
+		<start><mya>201</mya></start>
+		<description>
+			<p>What is the Jurassic period known for? The Jurassic Period was a golden time for dinosaurs, which flourished for 180 million years. Huge sauropod herbivores and carnivores emerged.</p>
+		</description>
+	</data>
+	<data>
+		<name>Cretaceous Period (Mesozoic Era)</name>
+		<category>Geology</category>
+		<start><mya>145</mya></start>
+		<description>
+			<p>What is the Cretaceous Period known for? The Cretaceous is usually noted for being the last portion of the "Age of Dinosaurs", but that does not mean that new kinds of dinosaurs did not appear then.</p>
+		</description>
+	</data>
+	<data>
+		<name>Pleistocene Epoch (Cenozoic Era, Quaternary Period)</name>
+		<category>Geology</category>
+		<start><mya>2.58</mya></start>
+		<description>
+			<p>The dramatic event of this time period was the last "Ice Age." The Pleistocene Epoch also was the last time that a great diversity of mammals lived in North America, including mammoths, mastodons, giant sloths, several llama-like camels, and tapirs. And it was the last epoch native horses lived in North America.</p>
+		</description>
+	</data>
+	<data>
+		<name>Holocene Epoch (Cenozoic Era, Quaternary Period)</name>
 		<category>Geology</category>
 		<start><kya>11.8</kya></start>
+		<description>
+			<p>What is the Holocene epoch known for? The Holocene corresponds with the rapid proliferation, growth and impacts of the human species worldwide, including all of its written history, technological revolutions, development of major civilizations, and overall significant transition towards urban living in the present.</p>
+		</description>
 	</data>
+	<data>
+		<name>Proposed Anthropocene Epoch (Cenozoic Era, Quaternary Period)</name>
+		<category>Geology</category>
+		<start><ce>1945</ce></start>
+		<description>
+			<p>The Anthropocene is a proposed geological epoch dating from the commencement of significant human impact on Earth's geology and ecosystems.</p>
+			<p>Various start dates have been proposed, but the peak in radionuclides fallout consequential to atomic bomb testing during the 1950s has been more favoured than others, locating a possible beginning of the Anthropocene to the detonation of the first atomic bomb in 1945.</p>
+		</description>
+	</data>
+	
+	<!-- 
+		<duration></duration>
+		<description>
+			<p></p>
+		</description>
+	-->
 </history>

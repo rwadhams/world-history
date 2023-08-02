@@ -19,4 +19,21 @@ class HistoryEvent {
 	HistoryDate start
 	HistoryDate end
 	HistoryPeriod duration
+	
+	String reportStart() {
+		switch (start.timeScale) {
+			case TimeScale.CE :
+				return "Starting ${start.year} CE"
+			case TimeScale.BCE :
+				return "Starting ${Math.abs(start.value)} BCE"
+			case TimeScale.KYA :
+				return "${start.value} thousand years ago"
+			case TimeScale.MYA :
+				return "${start.value} million years ago"
+			case TimeScale.GYA :
+				return "${start.value} billion years ago"
+			default :
+				return "More work required here..."
+		}
+	}
 }
