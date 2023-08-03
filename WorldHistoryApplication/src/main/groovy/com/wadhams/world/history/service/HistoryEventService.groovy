@@ -2,7 +2,6 @@ package com.wadhams.world.history.service
 
 import com.wadhams.world.history.biz.HistoryEvent
 import com.wadhams.world.history.date.HistoryDate
-import com.wadhams.world.history.date.HistoryDuration
 import com.wadhams.world.history.dto.HistoryDTO
 
 class HistoryEventService {
@@ -19,8 +18,8 @@ class HistoryEventService {
 			if (dto.endTimeScale) {
 				he.end = new HistoryDate(dto.endTimeScale, dto.endText)
 			}
-			if (dto.durationTimeScale) {
-				he.inputDuration = new HistoryDuration(dto.durationTimeScale, dto.durationText)
+			if (dto.durationText) {
+				he.inputDurationText = dto.durationText
 			}
 
 			historyEventList << he

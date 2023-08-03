@@ -18,8 +18,7 @@ class HistoryDTO {
 	String endText
 	
 	//duration. Optional. Can be included when 'end' is not available or missing 
-	TimeScale durationTimeScale
-	String durationText
+	String durationText		//e.g. '252 million years', '800 years' 
 	
 	List<String> descriptionList = []
 }

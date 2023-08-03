@@ -51,6 +51,13 @@
 		<category>Australia</category>
 		<start><dt>16/03/1774</dt></start>
 		<end><dt>19/07/1814</dt></end>
+		<description>
+			<p>Flinders entered the Royal Navy in 1789 and became a navigator who charted much of the Australian coast.</p>
+			<p>In 1795 he sailed to Australia, where he explored and charted its southeast coast and circumnavigated the island of Tasmania.</p> 
+			<p>As commander of the Investigator, he again sailed from England for Australia in 1801. On this visit he surveyed the entire southern coast, from Cape Leeuwin, in the southwest, to the Bass Strait, which separates mainland Australia from Tasmania.</p>
+			<p>On July 22, 1802, he sailed from Sydney (on Port Jackson) and charted the east coast of Australia and the Gulf of Carpentaria on the north coast. Continuing westward and southward, he circumnavigated Australia and again reached Port Jackson on June 9, 1803.</p>
+			<p>In December, on the voyage back to England, the condition of his ship required him to stop at the Île de France (now Mauritius) in the western Indian Ocean. There he was interned by the French authorities and was not allowed to leave for England until 1810. His "Voyage to Terra Australis" appeared shortly before his death.</p>
+		</description>
 	</data>
 	
 	<!-- events in history -->
@@ -59,12 +66,32 @@
 		<category>War</category>
 		<start><ym>09/1939</ym></start>
 		<end><ym>09/1945</ym></end>
+		<description>
+			<p>World War II was the biggest and deadliest war in history, involving more than 30 countries.</p>
+			<p>Sparked by the 1939 Nazi invasion of Poland, the war dragged on for six bloody years until the Allies defeated the Axis powers of Nazi Germany, Japan and Italy in 1945.</p>
+		</description>
 	</data>
 	<data>
 		<name>World War I</name>
 		<category>War</category>
 		<start><ym>07/1914</ym></start>
 		<end><ym>11/1918</ym></end>
+		<description>
+			<p>World War I pitted Germany, Austria-Hungary and the Ottoman Empire against Great Britain, the United States, France, Russia, Italy and Japan.</p>
+			<p>New military technology resulted in unprecedented carnage. By the time the war was over and the Allied Powers claimed victory, more than 16 million people - soldiers and civilians alike - were dead.</p>
+		</description>
+	</data>
+	<data>
+		<name>Vietnam War</name>
+		<category>War</category>
+		<start><ym>11/1955</ym></start>
+		<end><ym>04/1975</ym></end>
+		<description>
+			<p>The Vietnam War was a long, costly and divisive conflict that pitted the communist government of North Vietnam against South Vietnam and its principal ally, the United States.</p>
+			<p>The conflict was intensified by the ongoing Cold War between the United States and the Soviet Union.</p>
+			<p>More than 3 million people (including over 58,000 Americans) were killed in the Vietnam War, and more than half of the dead were Vietnamese civilians.</p>
+			<p>Opposition to the war in the United States bitterly divided Americans, even after President Richard Nixon signed the Paris Peace Accords and ordered the withdrawal of U.S. forces in 1973.</p>
+			<p>Communist forces ended the war by seizing control of South Vietnam in 1975, and the country was unified as the Socialist Republic of Vietnam the following year.</p>		</description>
 	</data>
 	
 	<!-- geology in history -->
@@ -82,7 +109,7 @@
 		<name>Precambrian (informal grouping of 3 Eons)</name>
 		<category>Geology</category>
 		<start><gya>4.54</gya></start>
-		<duration><gya>4</gya></duration>
+		<duration>4 billion years</duration>
 		<description>
 			<p>Began with the formation of the earth and continued until 541 million years ago.</p>
 			<p>Eons (Hadean, Archean, and Proterozoic) which represent 88% of geological time.</p>
@@ -92,7 +119,7 @@
 		<name>Paleozoic Era ("old life")</name>
 		<category>Geology</category>
 		<start><mya>541</mya></start>
-		<duration><mya>290</mya></duration>
+		<duration>290 million years</duration>
 		<description>
 			<p>Characterized by trilobites, the first four-limbed vertebrates, and the origin of land plants.</p>
 		</description>
@@ -101,7 +128,7 @@
 		<name>Mesozoic Era ("middle life")</name>
 		<category>Geology</category>
 		<start><mya>252</mya></start>
-		<duration><mya>186</mya></duration>
+		<duration>186 million years</duration>
 		<description>
 			<p>The "Age of Dinosaurs", though also is noteworthy for the first appearances of mammals and flowering plants.</p>
 		</description>
@@ -110,7 +137,7 @@
 		<name>Cenozoic Era ("new life")</name>
 		<category>Geology</category>
 		<start><mya>66</mya></start>
-		<duration><mya>66</mya></duration>
+		<duration>66 million years</duration>
 		<description>
 			<p>The "Age of Mammals"</p>
 		</description>
@@ -119,7 +146,7 @@
 		<name>Cambrian Period (Paleozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>541</mya></start>
-		<duration><mya>56</mya></duration>
+		<duration>56 million years</duration>
 		<description>
 			<p>What is the Cambrian period known for? Explosion of life.</p>
 			<p>Nevertheless, two things make the Cambrian Period notable. First, life exploded with almost all the major groups evolving in a relatively short time (about 40 million years). Second, the rise of animals with hard shells meant they had a much better chance of becoming fossilized.</p>
@@ -130,7 +157,7 @@
 		<name>Ordovician Period (Paleozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>485</mya></start>
-		<duration><mya>41</mya></duration>
+		<duration>41 million years</duration>
 		<description>
 			<p>What is the Ordovician period known for? The Ordovician is best known for its diverse marine invertebrates, including graptolites, trilobites, brachiopods, and the conodonts (early vertebrates). A typical marine community consisted of these animals, plus red and green algae, primitive fish, cephalopods, corals, crinoids, and gastropods.</p>
 		</description>
@@ -139,7 +166,7 @@
 		<name>Silurian Period (Paleozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>444</mya></start>
-		<duration><mya>25</mya></duration>
+		<duration>25 million years</duration>
 		<description>
 			<p>What is the Silurian period known for? Possibly the most remarkable biological event during the Silurian was the evolution and diversification of fish. Not only does this time period mark the wide and rapid spread of jawless fish, but also the appearances of both the first known freshwater fish and the first fish with jaws.</p>
 		</description>
@@ -148,7 +175,7 @@
 		<name>Devonian Period (Paleozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>419</mya></start>
-		<duration><mya>60</mya></duration>
+		<duration>60 million years</duration>
 		<description>
 			<p>"Age of Fishes"</p>
 		</description>
@@ -157,7 +184,7 @@
 		<name>Carboniferous Period (Paleozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>359</mya></start>
-		<duration><mya>60</mya></duration>
+		<duration>60 million years</duration>
 		<description>
 			<p>"Age of Amphibians"</p>
 			<p>The Carboniferous is the first period in which today's coal beds began to form.</p>
@@ -168,7 +195,7 @@
 		<name>Permian Period (Paleozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>299</mya></start>
-		<duration><mya>47</mya></duration>
+		<duration>47 million years</duration>
 		<description>
 			<p>What is Permian period known for? During the Permian Period, Earth's crustal plates formed a single, massive continent called Pangaea. In the correspondingly large ocean, Panthalassa, marine organisms such as brachiopods, gastropods, cephalopods (nautiloids and ammonoids), and crinoids were present. On land, reptiles replaced amphibians in abundance.</p>
 		</description>
@@ -177,7 +204,7 @@
 		<name>Triassic Period (Mesozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>252</mya></start>
-		<duration><mya>51</mya></duration>
+		<duration>51 million years</duration>
 		<description>
 			<p>"Age of Reptiles"</p>
 			<p>What is Triassic period known for? Reptiles, and particularly dinosaurs, were the dominant land-dwelling vertebrate animals at the time.</p>
@@ -187,7 +214,7 @@
 		<name>Jurassic Period (Mesozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>201</mya></start>
-		<duration><mya>56</mya></duration>
+		<duration>56 million years</duration>
 		<description>
 			<p>What is the Jurassic period known for? The Jurassic Period was a golden time for dinosaurs, which flourished for 180 million years. Huge sauropod herbivores and carnivores emerged.</p>
 		</description>
@@ -196,7 +223,7 @@
 		<name>Cretaceous Period (Mesozoic Era)</name>
 		<category>Geology</category>
 		<start><mya>145</mya></start>
-		<duration><mya>80</mya></duration>
+		<duration>80 million years</duration>
 		<description>
 			<p>What is the Cretaceous Period known for? The Cretaceous is usually noted for being the last portion of the "Age of Dinosaurs", but that does not mean that new kinds of dinosaurs did not appear then.</p>
 		</description>
@@ -228,7 +255,7 @@
 	</data>
 	
 	<!-- 
-		<duration><timescale></timescale></duration>
+		<duration></duration>
 		<description>
 			<p></p>
 		</description>

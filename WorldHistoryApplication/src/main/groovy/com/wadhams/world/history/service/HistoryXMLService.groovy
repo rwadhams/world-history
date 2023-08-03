@@ -127,25 +127,10 @@ class HistoryXMLService {
 			
 			//duration
 			if (endNotFound) {	//check for duration
-				def durationGYA = txn.duration.gya
-				def durationMYA = txn.duration.mya
-				def durationKYA = txn.duration.kya
-	
-				if (durationKYA.size()) {
-					dto.durationTimeScale = TimeScale.KYA
-					String durationText = durationKYA.text()
-					dto.durationText = durationText
+				String duration = txn.duration.text()
+				if (duration.size()) {
+					dto.durationText = duration
 				}
-				else if (durationMYA.size()) {
-					dto.durationTimeScale = TimeScale.MYA
-					String durationText = durationMYA.text()
-					dto.durationText = durationText
-				}
-				else if (durationGYA.size()) {
-					dto.durationTimeScale = TimeScale.GYA
-					String durationText = durationGYA.text()
-					dto.durationText = durationText
-				}			
 			}
 
 			//description lines

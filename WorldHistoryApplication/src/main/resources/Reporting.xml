@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<reporting>
+	<!-- -->
+	<data>
+		<category>Geology</category>
+		<filename>geology-timeline-report.txt</filename>
+		<heading>GEOLOGY TIMELINE REPORT</heading>
+	</data>
+	<!-- -->
+	<data>
+		<category>War</category>
+		<filename>war-timeline-report.txt</filename>
+		<heading>WAR TIMELINE REPORT</heading>
+	</data>
+</reporting>
