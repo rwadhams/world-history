@@ -8,6 +8,7 @@ import com.wadhams.world.history.service.GenericTimelineReportService
 import com.wadhams.world.history.service.HistoryEventService
 import com.wadhams.world.history.service.HistoryXMLService
 import com.wadhams.world.history.service.ReportingXMLService
+import com.wadhams.world.history.service.ValidationService
 
 class WorldHistoryController {
 	def execute() {
@@ -32,6 +33,9 @@ class WorldHistoryController {
 //		}
 //		println ''
 		
+//		ValidationService validationService = new ValidationService()
+//		validationService.validate(historyEventList)
+		
 		GenericTimelineReportService genericTimelineReportService = new GenericTimelineReportService(reportingDTOList, historyEventList)
 		genericTimelineReportService.execute()
 		println ''
@@ -43,7 +47,5 @@ class WorldHistoryController {
 		GeologyTimelineReportService geologyTimelineReportService = new GeologyTimelineReportService()
 		geologyTimelineReportService.execute(geologyList)
 */		
-		
-		println ''
 	}
 }

@@ -19,13 +19,14 @@ class HistoryEvent {
 	
 	String name
 	List<String> categoryList = []
-	List<String> descriptionList = []
 	
 	//date-related values
 	HistoryDate start
 	HistoryDate end
 	String inputDurationText
 
+	List<String> descriptionList = []
+	
 	String buildHistoryDateText() {
 		//start HistoryDate only, no end HistoryDate
 		if (start && !end) {
@@ -59,7 +60,7 @@ class HistoryEvent {
 				startText = "${start.year} CE"
 				break
 			case TimeScale.BCE :
-				startText = "${Math.abs(start.value)} BCE"
+				startText = "${Math.abs(start.year.getValue())} BCE"
 				break
 			default :
 				println "Should not happen: ${toString()}"
@@ -77,7 +78,7 @@ class HistoryEvent {
 				endText = "${end.year} CE"
 				break
 			case TimeScale.BCE :
-				endText = "${Math.abs(end.value)} BCE"
+				endText = "${Math.abs(end.year.getValue())} BCE"
 				break
 			default :
 				println "Should not happen: ${toString()}"
@@ -100,8 +101,12 @@ class HistoryEvent {
 			return inputDurationText
 		}
 		
-		if (start.yearMonth) {	//assume both start and end are using TimeScale.YearMonth
-			Period period = Period.between(start.yearMonth, end.yearMonth);
+		if (start.timeScale == TimeScale.LocalDate || start.timeScale == TimeScale.YearMonth) {
+			if (start.timeScale != end.timeScale) {
+				println "Should not happen: ${toString()}"
+				throw new RuntimeException('Mis-matched TimeScale')
+			}
+			Period period = Period.between(start.yearMonth, end.yearMonth)
 			int pYears = period.getYears()
 			int pMonths = period.getMonths()
 			//println "$pYears year(s), $pMonths months"
@@ -118,7 +123,19 @@ class HistoryEvent {
 			return result
 		}
 		
+		if (start.timeScale == TimeScale.BCE || start.timeScale == TimeScale.CE) {
+			if (start.timeScale == TimeScale.CE && end.timeScale == TimeScale.BCE) {
+				println "Should not happen: ${toString()}"
+				throw new RuntimeException('Invalid TimeScales')
+			}
+			Period period = Period.between(start.year, end.year)
+			int pYears = period.getYears()
+			//println "$pYears year(s)"
+			
+			return "$pYears year${(pYears > 1)?'s':''}"
+		}
+		
 		println "Should not happen: ${toString()}"
-		throw new RuntimeException()
+		throw new RuntimeException('Unable to buildDurationText')
 	}
 }
