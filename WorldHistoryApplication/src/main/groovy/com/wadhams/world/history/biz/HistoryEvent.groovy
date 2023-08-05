@@ -51,7 +51,7 @@ class HistoryEvent {
 		String startText
 		switch (start.timeScale) {
 			case TimeScale.LocalDate :
-				startText = "${start.localDate.format(localDateDTF)} CE"
+				startText = "${start.localDate.format(localDateDTF)}"
 				break
 			case TimeScale.YearMonth :
 				startText = "${start.yearMonth.format(yearMonthDTF)}"
@@ -69,7 +69,7 @@ class HistoryEvent {
 		String endText
 		switch (end.timeScale) {
 			case TimeScale.LocalDate :
-				endText = "${end.localDate.format(localDateDTF)} CE"
+				endText = "${end.localDate.format(localDateDTF)}"
 				break
 			case TimeScale.YearMonth :
 				endText = "${end.yearMonth.format(yearMonthDTF)}"

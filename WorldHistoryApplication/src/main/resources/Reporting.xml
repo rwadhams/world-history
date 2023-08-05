@@ -12,4 +12,9 @@
 		<filename>war-timeline-report.txt</filename>
 		<heading>WAR TIMELINE REPORT</heading>
 	</data>
+	<data>
+		<category>Person</category>
+		<filename>people-timeline-report.txt</filename>
+		<heading>PEOPLE IN HISTORY REPORT</heading>
+	</data>
 </reporting>
