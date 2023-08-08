@@ -9,7 +9,21 @@ class ValidationService {
 		historyEventList.each {he ->
 			println he
 			println "${he.name}"
-			println "${he.buildHistoryDateText()}"
+			println "sortDate: ${he.sortDate}"
+			if (he.hasBirthText()) {
+				println 'hasBirthText(): true'
+				println "${he.buildBirthText()}"
+			}
+			else {
+				println 'hasBirthText(): false'
+			}
+			if (he.hasStartText()) {
+				println 'hasStartText(): true'
+				println "${he.buildStartText()}"
+			}
+			else {
+				println 'hasStartText(): false'
+			}
 			if (he.hasDuration()) {
 				println 'hasDuration(): true'
 				println "${he.buildDurationText()}"

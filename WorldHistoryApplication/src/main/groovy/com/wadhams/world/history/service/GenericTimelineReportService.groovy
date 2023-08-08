@@ -5,6 +5,8 @@ import com.wadhams.world.history.comparator.HistoryEventStartComparator
 import com.wadhams.world.history.dto.ReportingDTO
 
 class GenericTimelineReportService {
+	HistoryEventReportService historyEventReportService = new HistoryEventReportService()
+	
 	List<ReportingDTO> reportingDTOList
 	List<HistoryEvent> historyEventList
 	
@@ -34,24 +36,8 @@ class GenericTimelineReportService {
 			String u1 = ''.padRight(dto.heading.size(), '-')
 			pw.println u1
 	
-			report(genericList, pw)
+			historyEventReportService.report(genericList, pw)
 		}
 	}
 
-	def report(List<HistoryEvent> genericList, PrintWriter pw) {
-		genericList.each {he ->
-			pw.println "${he.name}"
-			pw.print "\t${he.buildHistoryDateText()}"
-			if (he.hasDuration()) {
-				pw.println " (Duration: ${he.buildDurationText()})"
-			}
-			else {
-				pw.println ''
-			}
-			he.descriptionList.each {text ->
-				pw.println "\t$text"
-			}
-			pw.println ''
-		}
-	}
 }

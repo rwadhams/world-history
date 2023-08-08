@@ -30,7 +30,7 @@ class HistoryEventServiceSpec extends Specification {
 			dto2.descriptionList = ['desc1']
 			dtoList << dto2
 			
-			HistoryEventService service = new HistoryEventService()
+			HistoryEventBuilderService service = new HistoryEventBuilderService()
 			
 		when:
 			List<HistoryEvent> heList = service.buildHistoryEventList(dtoList)

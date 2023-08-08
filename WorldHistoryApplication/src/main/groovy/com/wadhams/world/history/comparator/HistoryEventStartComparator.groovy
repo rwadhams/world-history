@@ -12,6 +12,6 @@ class HistoryEventStartComparator implements Comparator<HistoryEvent> {
 	
 	@Override
 	public int compare(HistoryEvent he1, HistoryEvent he2) {
-		return comparator.compare(he1.start, he2.start)
+		return comparator.compare(he1.sortDate, he2.sortDate)
 	}
 }

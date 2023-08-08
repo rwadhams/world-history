@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <history>
+	<!-- geology in history -->
+	<data>
+		<name>Age of the Universe</name>
+		<category>Geology</category>
+		<start><gya>13.8</gya></start>
+	</data>
+	<data>
+		<name>Cenozoic Era ("new life")</name>
+		<category>Geology</category>
+		<start><mya>66</mya></start>
+		<duration>66 million years</duration>
+		<description>
+			<p>The "Age of Mammals"</p>
+		</description>
+	</data>
 	<!-- wars in history -->
 	<data>
 		<name>Vietnam War</name>
@@ -51,6 +66,14 @@
 			<p>As commander of the Investigator, he again sailed from England for Australia in 1801. On this visit he surveyed the entire southern coast, from Cape Leeuwin, in the southwest, to the Bass Strait, which separates mainland Australia from Tasmania.</p>
 			<p>On July 22, 1802, he sailed from Sydney (on Port Jackson) and charted the east coast of Australia and the Gulf of Carpentaria on the north coast. Continuing westward and southward, he circumnavigated Australia and again reached Port Jackson on June 9, 1803.</p>
 			<p>In December, on the voyage back to England, the condition of his ship required him to stop at the Île de France (now Mauritius) in the western Indian Ocean. There he was interned by the French authorities and was not allowed to leave for England until 1810. His "Voyage to Terra Australis" appeared shortly before his death.</p>
+		</description>
+	</data>
+	<data>
+		<name>John Living</name>
+		<category>Person</category>
+		<born><dt>14/05/2002</dt></born>
+		<description>
+			<p>This person is alive</p>
 		</description>
 	</data>
 </history>

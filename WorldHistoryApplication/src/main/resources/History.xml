@@ -4,8 +4,8 @@
 	<data>
 		<name>Alexander the Great</name>
 		<category>Person</category>
-		<start><bce>356</bce></start>
-		<end><bce>323</bce></end>
+		<born><bce>356</bce></born>
+		<died><bce>323</bce></died>
 		<description>
 			<p>Alexander III of Macedon, commonly known as Alexander the Great, was a king of the ancient Greek kingdom of Macedon.</p>
 			<p>He succeeded his father Philip II to the throne in 336 BC at the age of 20, and spent most of his ruling years conducting a lengthy military campaign throughout Western Asia and Egypt.</p>
@@ -14,32 +14,32 @@
 	<data>
 		<name>Augustus</name>
 		<category>Person</category>
-		<start><bce>63</bce></start>
-		<end><ce>14</ce></end>
+		<born><bce>63</bce></born>
+		<died><ce>14</ce></died>
 	</data>
 	<data>
 		<name>Marcus Aurelius</name>
 		<category>Person</category>
-		<start><ce>121</ce></start>
-		<end><ce>180</ce></end>
+		<born><ce>121</ce></born>
+		<died><ce>180</ce></died>
 	</data>
 	<data>
 		<name>Elizabeth I</name>
 		<category>Person</category>
-		<start><ym>09/1533</ym></start>
-		<end><ym>03/1603</ym></end>
+		<born><ym>09/1533</ym></born>
+		<died><ym>03/1603</ym></died>
 	</data>
 	<data>
 		<name>Steve Jobs</name>
 		<category>Person</category>
-		<start><dt>24/02/1955</dt></start>
-		<end><dt>05/10/2011</dt></end>
+		<born><dt>24/02/1955</dt></born>
+		<died><dt>05/10/2011</dt></died>
 	</data>
 	<data>
 		<name>Albert Einstein</name>
 		<category>Person</category>
-		<start><dt>14/03/1879</dt></start>
-		<end><dt>18/04/1955</dt></end>
+		<born><dt>14/03/1879</dt></born>
+		<died><dt>18/04/1955</dt></died>
 		<description>
 			<p>Albert Einstein was a German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time.</p>
 		</description>
@@ -49,8 +49,8 @@
 		<category>Person</category>
 		<category>Explorer</category>
 		<category>Australia</category>
-		<start><dt>16/03/1774</dt></start>
-		<end><dt>19/07/1814</dt></end>
+		<born><dt>16/03/1774</dt></born>
+		<died><dt>19/07/1814</dt></died>
 		<description>
 			<p>Flinders entered the Royal Navy in 1789 and became a navigator who charted much of the Australian coast.</p>
 			<p>In 1795 he sailed to Australia, where he explored and charted its southeast coast and circumnavigated the island of Tasmania.</p> 

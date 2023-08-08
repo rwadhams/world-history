@@ -5,7 +5,7 @@ import com.wadhams.world.history.dto.HistoryDTO
 import com.wadhams.world.history.dto.ReportingDTO
 import com.wadhams.world.history.report.GeologyTimelineReportService
 import com.wadhams.world.history.service.GenericTimelineReportService
-import com.wadhams.world.history.service.HistoryEventService
+import com.wadhams.world.history.service.HistoryEventBuilderService
 import com.wadhams.world.history.service.HistoryXMLService
 import com.wadhams.world.history.service.ReportingXMLService
 import com.wadhams.world.history.service.ValidationService
@@ -26,8 +26,8 @@ class WorldHistoryController {
 //		}
 //		println ''
 		
-		HistoryEventService historyEventService = new HistoryEventService()
-		List<HistoryEvent> historyEventList = historyEventService.buildHistoryEventList(historyDTOList)
+		HistoryEventBuilderService historyEventBuilderService = new HistoryEventBuilderService()
+		List<HistoryEvent> historyEventList = historyEventBuilderService.buildHistoryEventList(historyDTOList)
 //		historyEventList.each {he ->
 //			println he
 //		}

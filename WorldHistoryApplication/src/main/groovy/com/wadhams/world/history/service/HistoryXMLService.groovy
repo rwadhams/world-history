@@ -49,6 +49,68 @@ class HistoryXMLService {
 				dto.categoryList << cat
 			}
 			
+			//born
+			def bornBCE = txn.born.bce
+			def bornCE  = txn.born.ce
+			def bornYM = txn.born.ym
+			def bornDT = txn.born.dt
+			boolean bornNotFound = false	//not used
+			
+			if (bornDT.size()) {
+				dto.bornTimeScale = TimeScale.LocalDate
+				String bornText = bornDT.text()
+				dto.bornText = bornText
+			}
+			else if (bornYM.size()) {
+				dto.bornTimeScale = TimeScale.YearMonth
+				String bornText = bornYM.text()
+				dto.bornText = bornText
+			}
+			else if (bornCE.size()) {
+				dto.bornTimeScale = TimeScale.CE
+				String bornText = bornCE.text()
+				dto.bornText = bornText
+			}
+			else if (bornBCE.size()) {
+				dto.bornTimeScale = TimeScale.BCE
+				String bornText = bornBCE.text()
+				dto.bornText = bornText
+			}
+			else {
+				bornNotFound = true
+			}
+
+			//died
+			def diedBCE = txn.died.bce
+			def diedCE  = txn.died.ce
+			def diedYM = txn.died.ym
+			def diedDT = txn.died.dt
+			boolean diedNotFound = false	//not used
+			
+			if (diedDT.size()) {
+				dto.diedTimeScale = TimeScale.LocalDate
+				String diedText = diedDT.text()
+				dto.diedText = diedText
+			}
+			else if (diedYM.size()) {
+				dto.diedTimeScale = TimeScale.YearMonth
+				String diedText = diedYM.text()
+				dto.diedText = diedText
+			}
+			else if (diedCE.size()) {
+				dto.diedTimeScale = TimeScale.CE
+				String diedText = diedCE.text()
+				dto.diedText = diedText
+			}
+			else if (diedBCE.size()) {
+				dto.diedTimeScale = TimeScale.BCE
+				String diedText = diedBCE.text()
+				dto.diedText = diedText
+			}
+			else {
+				diedNotFound = true
+			}
+			
 			//start
 			def startGYA = txn.start.gya
 			def startMYA = txn.start.mya
@@ -57,6 +119,7 @@ class HistoryXMLService {
 			def startCE  = txn.start.ce
 			def startYM = txn.start.ym
 			def startDT = txn.start.dt
+			boolean startNotFound = false	//not used
 			
 			if (startDT.size()) {
 				dto.startTimeScale = TimeScale.LocalDate
@@ -92,6 +155,9 @@ class HistoryXMLService {
 				dto.startTimeScale = TimeScale.GYA
 				String startText = startGYA.text()
 				dto.startText = startText
+			}
+			else {
+				startNotFound = true
 			}
 
 			//end

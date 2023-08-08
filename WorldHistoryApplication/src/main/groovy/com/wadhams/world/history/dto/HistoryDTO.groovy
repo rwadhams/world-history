@@ -7,9 +7,18 @@ import groovy.transform.ToString
 @ToString(includeNames=true)
 class HistoryDTO {
 	String name
+
 	List<String> categoryList = []
 	
-	//start. Required.
+	//born. Required, if born not provided.
+	TimeScale bornTimeScale
+	String bornText
+	
+	//died. Optional. May still be living.
+	TimeScale diedTimeScale
+	String diedText
+	
+	//start. Required, if born not provided.
 	TimeScale startTimeScale
 	String startText
 	
