@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<history>
+	<data>
+		<name>Matthew Flinders</name>
+		<category>Person</category>
+		<category>Explorer</category>
+		<category>Australia</category>
+		<born><dt>16/03/1774</dt></born>
+		<died><dt>19/07/1814</dt></died>
+		<description>
+			<p>Flinders entered the Royal Navy in 1789 and became a navigator who later charted much of the Australian coast.</p>
+		</description>
+		<datedDescription>
+			<when><ce>1795</ce></when>
+			<p>He sailed to Australia, where he explored and charted its southeast coast and circumnavigated the island of Tasmania.</p> 
+		</datedDescription>
+		<datedDescription>
+			<when><ce>1801</ce></when>
+			<p>As commander of the Investigator, he again sailed from England for Australia. On this visit he surveyed the entire southern coast, from Cape Leeuwin, in the southwest, to the Bass Strait, which separates mainland Australia from Tasmania.</p>
+		</datedDescription>
+		<datedDescription>
+			<when><ym>07/1802</ym></when>
+			<p>He sailed from Sydney (on Port Jackson) and charted the east coast of Australia and the Gulf of Carpentaria on the north coast.</p>
+			<p>Continuing westward and southward, he circumnavigated Australia and again reached Port Jackson in June 1803.</p>>
+		</datedDescription>
+		<datedDescription>
+			<when><ym>12/1803</ym></when>
+			<p>On the voyage back to England, the condition of his ship required him to stop at the Île de France (now Mauritius) in the western Indian Ocean. There he was interned by the French authorities and was not allowed to leave for England until 1810.</p>
+			<p>His "Voyage to Terra Australis" appeared shortly before his death.</p>>
+		</datedDescription>
+	</data>
+</history>

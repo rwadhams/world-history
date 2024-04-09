@@ -17,13 +17,12 @@ class TestApp {
 		TestApp app = new TestApp()
 		app.execute()
 		
-		println ''
 		println 'TestApp ended.'
 	}
 	
 	def execute() {
 		HistoryXMLService historyXMLService = new HistoryXMLService()
-		historyXMLService.historyFilename = 'TestHistory02.xml'
+		historyXMLService.historyFilename = 'TestHistory03.xml'
 		List<HistoryDTO> historyDTOList = historyXMLService.loadHistoryData()
 		historyDTOList.each {dto ->
 			println dto
@@ -32,29 +31,27 @@ class TestApp {
 		println '------------------------------------------------------------'
 		println ''
 		
-		HistoryEventBuilderService historyEventBuilderService = new HistoryEventBuilderService()
-		List<HistoryEvent> historyEventList = historyEventBuilderService.buildHistoryEventList(historyDTOList)
-		historyEventList.each {he ->
-			println he
-		}
-		println ''
-		println '------------------------------------------------------------'
-		println ''
+//		HistoryEventBuilderService historyEventBuilderService = new HistoryEventBuilderService()
+//		List<HistoryEvent> historyEventList = historyEventBuilderService.buildHistoryEventList(historyDTOList)
+//		historyEventList.each {he ->
+//			println he
+//		}
+//		println ''
+//		println '------------------------------------------------------------'
+//		println ''
 		
-		Collections.sort(historyEventList, new HistoryEventStartComparator())
+//		Collections.sort(historyEventList, new HistoryEventStartComparator())
 		
-		ValidationService validationService = new ValidationService()
-		validationService.validate(historyEventList)
-
-		println ''
-		println '------------------------------------------------------------'
-		println ''
+//		ValidationService validationService = new ValidationService()
+//		validationService.validate(historyEventList)
+//		println ''
+//		println '------------------------------------------------------------'
+//		println ''
 		
-		PrintWriter pw = new PrintWriter(System.out, true)
-		
-		HistoryEventReportService historyEventReportService = new HistoryEventReportService()
-		historyEventReportService.report(historyEventList, pw)
-		println ''
+//		PrintWriter pw = new PrintWriter(System.out, true)
+//		HistoryEventReportService historyEventReportService = new HistoryEventReportService()
+//		historyEventReportService.report(historyEventList, pw)
+//		println ''
 		
 	}
 }
